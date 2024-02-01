@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'notifications',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -121,3 +123,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+KAFKA_SERVER = 'pkc-9q8rv.ap-south-2.aws.confluent.cloud:9092'
+KAFKA_API_KEY = 'OJN24WICSFDXH7UW'
+KAFKA_API_SECRET = 'xAMXhV3RX7vCcymBkeRUZBW3WEGizaZR3ihtiwl6OcCocEml1H/DjhUqXJMK6AGt'
+KAFKA_TOPIC = 'topic_0'
+
+FIREBASE_API_KEY = 'AIzaSyBojecTZz9OxK0GEoEd5sFZQBeJp8b5azk'
+FIREBASE_PROJECT_ID = 'patient-online-intake'
