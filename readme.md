@@ -37,7 +37,6 @@ Push Notification API is a Django-based application that utilizes Firebase Admin
 4. Kubernetes deployment: 
 ```bash
     kubectl apply -f deployment-django.yml
-```
 ```bash
     kubectl apply -f deployment-kafka.yml
 ```
@@ -59,7 +58,7 @@ Push Notification API is a Django-based application that utilizes Firebase Admin
 - Add data validation for API endpoints
 - Improve error handling
 - Integrate with additional notification services
-
+- Use secrets manager to store credentials.
 
 ## Side Note:
 The container runs successfully without kubernetes but when I deploy it using kubernetes I get the following error.
