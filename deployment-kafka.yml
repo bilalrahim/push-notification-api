@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kafka-script
+  template:
+    metadata:
+      labels:
+        app: kafka-script
+    spec:
+      containers:
+      - name: kafka-container
+        image: gcr.io/push-notification-api-413106/kafka-service:v1
