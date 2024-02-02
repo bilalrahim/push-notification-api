@@ -66,3 +66,5 @@ The container runs successfully without kubernetes but when I deploy it using ku
 ```bash
 exec: "gunicorn": executable file not found in $PATH: unknown
 ```
+
+Plus since currently we do not have any device tokens from Firebase, because this is a demo project, so the firebase sdk throws an exception.
